@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carousel</title>
+</head>
+<body>
+ <h1>Wonders of the world</h1>   
+ <div class="carosel-container">
+ <section>
+    <img class="myslides" src="Drill Ship.png" width="300"  alt="image 1">      
+    <img class="myslides" src="Light house image.jpg" width="300" alt="image 2">
+    <img class="myslides" src="Mountain image.jpg" width="300" alt="image 3">
+ </section>
+</div>
+<script>
+    var myIndex = 0;
+    function carousel(){
+        var i;
+        var x = document.getElementsByClassName("myslides");
+        for (i = 0; i < x.length; i++) {''
+            x[i].style.display = "none";
+        }
+        myIndex++;
+        if (index > x.length) {myIndex = 1}
+        x[myIndex-1].style.display = "block";
+        setTimeout(carousel,2000);
+                             
+    }
+    
+ </script>   
+</body>
+</html>
